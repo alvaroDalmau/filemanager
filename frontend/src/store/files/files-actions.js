@@ -1,13 +1,21 @@
-
 export const receiveFiles = files => {
   return {
     type: 'files/receiveFiles',
-    files
+    files,
   };
 };
 
 export const refreshFiles = () => {
   return async dispatch => {
-    dispatch(receiveFiles([]));
+    // fetch('/api/files')
+    //   .then(response => {
+    //     return response.json();
+    //   })
+    //   .then(json => {
+    //     dispatch(receiveFiles(json));
+    //   })
+    //   .catch(err => {
+    //     console.log(err);
+    //   });
   };
 };

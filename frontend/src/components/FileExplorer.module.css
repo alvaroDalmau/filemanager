@@ -2,6 +2,9 @@
   --filexplorer-bgcolor: #2f2f2f;
 
   background-color: var(--filexplorer-bgcolor);
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 18px 0px;
 }
 
 .FileExplorerEmpty {
@@ -9,4 +12,49 @@
   text-align: center;
 }
 
-.FileExplorerItem {}
+.FileExplorerItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 18px;
+}
+.FileExplorerItem:hover {
+  cursor: pointer;
+  background-color: #3f3f3f;
+}
+
+.SelectedFile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 18px;
+  background-color: #1c1c1c;
+}
+
+.AlignCenter {
+  display: flex;
+  text-align: center;
+}
+
+.FileExplorerIcon {
+  padding: 0px 4px 0px 8px;
+  width: 18px;
+  height: 18px;
+}
+
+.FileExplorerSize {
+  font-size: 12px;
+}
+
+.level1 {
+  padding-left: 0px;
+}
+.level2 {
+  padding-left: 8px;
+}
+.level3 {
+  padding-left: 16px;
+}
+.level4 {
+  padding-left: 24px;
+}

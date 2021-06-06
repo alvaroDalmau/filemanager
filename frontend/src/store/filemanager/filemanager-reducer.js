@@ -6,7 +6,7 @@ export default (state = initialState, action) => {
   switch (action.type) {
     case 'filemanager/selectFile': {
       return {
-        ...state,
+        ...state, 
         selectedFile: action.file ?? initialState.selectedFile
       }
     }
