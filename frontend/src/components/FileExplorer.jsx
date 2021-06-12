@@ -44,9 +44,10 @@ const classLevelItem = level => {
 function FileExplorer({ files = [] }) {
   const [selectedFile, setFile] = useState({});
   const [finalFile, setSortedArr] = useState([]);
+
   useEffect(() => {
     setSortedArr(sortedArr(files));
-  }, []);
+  }, [files]);
 
   const dispatch = useDispatch();
   function fileSelected(file) {
